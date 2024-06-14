@@ -1,0 +1,534 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
+#home-screen {
+  width: 1512px;
+  height: 982px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  transform: translate(-50%, -50%);
+  background-color: #E5F2FF;
+  background-size: cover;
+  background-image: url('pattern.png');
+ 
+  overflow: hidden;
+}
+
+.top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.header-right{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  box-sizing: border-box;
+  gap: 60px;
+  align-items: center;
+}
+
+.degrees{
+  font-size: 30px;
+  margin-bottom: 22px;
+  margin-top: 22px;
+  
+}
+.sunny{
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.icons{
+  height: 40px;
+}
+
+.phone-icon-green{
+  height: 32px;
+}
+
+.weather-widget{
+  display: flex;
+  align-items: center;
+  padding-right: 6px;
+}
+
+.weather-text{
+ align-items: center;
+  line-height: 0px;
+  padding-left: 12px;
+  
+}
+
+.pfp{
+  height: 60px;
+}
+
+
+.nav-bar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 105px;
+  position: absolute;
+  left: 64px;
+  top: 192px;
+}
+
+.play-icon{
+  height: 42px;
+  cursor: pointer;
+}
+
+.setting-icon{
+  height: 42px;
+}
+
+.car-home-icon{
+  height: 35px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.phone-icon{
+  height: 36px;
+}
+
+.toggle{
+  height: 38px;
+  cursor: pointer;
+}
+
+.radial-nav {
+  background: radial-gradient(#ffffff, #fffbfb6e, #d8e9ff00, transparent);
+  height: 135px;
+  width: 125px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-0%, -37%); 
+  z-index: 1;
+}
+
+.radial-left {
+  background: radial-gradient(#4599FE, #4598fe44, #4598fe00, transparent);
+  height: 1500px;
+  width: 1500px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-60%, 15%); 
+  z-index: -1;
+}
+
+.radial-top-left {
+  background: radial-gradient(#4599FE, #4598fe44, #4598fe00, transparent);
+  height: 2500px;
+  width: 2500px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-20%, -35%); /* Center it horizontally and vertically */
+  z-index: -1;
+}
+
+.radial-middle {
+  background: radial-gradient(#4599FE, #4598fe44, #4598fe00, transparent);
+  height: 2500px;
+  width: 2500px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-70%, -45%);
+  z-index: -1;
+}
+
+
+.radial-right {
+  background: radial-gradient(#4599FE, #4598fe44, #4598fe00, transparent);
+  height: 1700px;
+  width: 1500px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(40%, -30%); 
+  z-index: -1;
+}
+
+
+.car-specs{
+  width: 460px;
+  height: 825px;
+  background-color:rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 20px;
+  top: 50%; 
+  left: 81%; 
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px); 
+}
+
+
+
+.phonebook{
+  width: 368px;
+  height: 288px;
+  background-color:rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  margin-top: 5px;
+  top: 81%; 
+  left: 52%; 
+  margin-left: 8px;
+  transform: translate(-48.5%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+.music{
+  width: 368px;
+  height: 288px;
+  background-color:rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 6px;
+  top: 81%; 
+  left:26%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+.map-navigation{
+  width: 766px;
+  height: 500px;
+  background-color:rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 8px;
+  top: 37%; 
+  left:39%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+}
+
+.phonebook{
+  color: white;
+}
+
+
+.downward-arrow{
+  height: 10px;
+  margin-top: 15px;
+}
+
+.phonebook-title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  position: absolute;
+  transform:translate(-20%, -125%);
+}
+.phonebook p{
+  font-size: 22px;
+  font-weight:light;
+  margin-bottom: 14px;
+  margin-top: 18px;
+}
+.custom-hr{
+  color: white;
+  width: 316px;
+}
+
+.contacts{
+  margin-top: 50px;
+}
+
+
+.map {
+  width: 100%;
+  height: 100%;
+
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+
+.directions-container{
+  position: absolute;
+  width: 720px;
+  height: 120px;
+  background-color:rgba(96, 101, 109, 0.5);
+  border-radius: 25px;
+  display: flex;
+  backdrop-filter: blur(10px);
+  transform:translate(0%, -140%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 30px;
+}
+
+.directions-icon{
+  height: 50px;
+}
+
+.directions-container h1{
+  font-size: 40px;
+  color: white;
+}
+
+.directions-container h2{
+  color: white;
+  margin: 0; 
+  padding: 0; 
+}
+
+.directions-container p{
+  color: #fff;
+  margin: 0; 
+  padding: 0; 
+  margin-top:10px; /
+}
+
+.arrival-container{
+  position: absolute;
+  width: 766px;
+  height: 120px;
+  background-color:rgba(40, 77, 128, 0.40);
+  border-radius: 25px;
+  display: flex;
+  backdrop-filter: blur(10px);
+  transform:translate(0%, 160%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; 
+  gap: 70px;
+  color: white;
+}
+
+.arrival-container h1{
+  margin: 0; 
+  padding: 0; 
+  font-size: 40px;
+}
+
+.arrival-container p{
+  margin: 0; 
+  padding: 0;
+  font-size: 20px; 
+  font-weight: lighter;
+  margin-top:-5px;
+}
+
+
+.search-icon{
+  height: 68px;
+  padding-left: 220px;
+}
+
+.car-specs {
+  width: 460px;
+  height: 825px;
+  background-color:rgba(0, 0, 0, 0.15);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 20px;
+  top: 50%;
+  left: 81%;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(10px);
+  gap: 0px;
+}
+
+.control-boxes {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.control-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  
+}
+
+.control-box img {
+  height: 30px;
+}
+
+.full-width-car-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-car {
+  height: 480px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
+.car-meter-container {
+  display: flex;
+  justify-content: center;
+}
+
+.car-meter {
+  height: 300px;
+}
+
+.music{
+  width: 100;
+}
+
+.album-cover{
+  height: 114px;
+  
+}
+
+.spotify-bar{
+  height: 30px;
+}
+
+
+.album-details{
+  display: flex;
+  flex-direction: row;
+}
+
+.spacer{
+  height: 22px;
+}
+
+.album-details h1{
+  font-size: 24px;
+  margin: 0; 
+  padding: 0;
+  color: white;
+  font-weight: 500;
+}
+
+
+.album-details h2{
+  font-size: 16px;
+  margin: 0; 
+  font-weight: lighter;
+  color: white;
+  padding: 0;
+}
+
+.album-details p {
+  font-size: 14px;
+  margin: 0; 
+  padding: 0;
+  color: #d5d5d5;
+}
+
+.album-text{
+margin-left: 10px;
+}
+
+.spotify-bar{
+  margin-top: -6px;
+}
+
+.pause{
+  height: 35px;
+}
+
+.rewind{
+  height: 22px;
+}
+
+.forward{
+  height: 22px;
+}
+
+.music-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.progress-bar-fill{
+  width: 302px;
+  height: 12px;
+  background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar{
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.music-time-stamps{
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+}
+
+.progress-bar-black{
+  width: 80px;
+  height: 12px;
+  background-color: #252525;
+  border-radius: 30px;
+  margin-left: -222px;
+}
+
+
+#mode-transition-container {
+  transition: background-color 0.5s ease;
+}

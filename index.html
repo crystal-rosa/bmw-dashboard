@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW Welcome Screen</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="navigation.js" defer></script>
+</head>
+<body>
+  <div id="welcome-screen">
+    <div class="left" id="left">
+      <div id="top-left">
+        <div class="content-wrapper">
+          <h1 class="time">2:54PM</h1>
+          <div class="welcome-weather" id="welcome-weather">
+            <img class="icons" src="icons/sun_icon.png">
+            <div class="widget-unactive">
+              <p class="degrees">89°F</p>
+              <p class="sunny">Sunny</p>
+            </div>
+          </div>
+          <div class="notification-bell" id="notification-bell">
+            <img class="icons" src="icons/bell_icon.png" alt="notification-bell">
+            <h3 class="widget-unactive notifications">1 Notification</h3>
+          </div>
+          <div class="bottom-left" id="bottom-left">
+            <h1 class="bmw-make">
+              BMW <br>F82 M4
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="right">
+      <div class="swipe-up-stack">
+        <div class="swipe-up" id="swipe-up">
+          <!-- <img id="swipe-up-icon" class="swipe-up-icon" src="icons/up_arrow.png" alt="Swipe Up Arrow"> -->
+          <h1 id="tap-to-unlock" class="tap-to-unlock">Tap to Unlock</h1>
+        </div>
+        <img class="bmw-swipe" src="bmw_images/bmw_welcome.png" alt="swipe-up-bmw">
+      </div>
+      <img class="bmw-logo" src="icons/bmw_logo.png">
+    </div>
+    
+    <div class="radial"></div>  
+  </div>
+  
+
+</body>
+</html>
